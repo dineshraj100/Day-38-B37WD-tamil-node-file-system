@@ -6,6 +6,9 @@ const date= new Date();
 const dotenv= require("dotenv").config();
 
 
+app.get('/', function (req, res) {
+  res.json('server running...type createtimestamp to create the txt file')
+})
 
 
 app.get("/createtimestamp",function (req,res){
